@@ -28,7 +28,7 @@ class Knight
         return display_path(visited, start, finish) if current_position == finish
 
         valid_moves(current_position).each do |move|
-          if !visited.include?(move) || !queue.include?(move)
+          if !visited.include?(move) 
             queue.push(move)
           end
         end
